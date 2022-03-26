@@ -21,11 +21,19 @@
   margin-right: 30px;
   font-weight: 4500;
   opacity: 0.7;
+  color: #ffff;
+  min-width: fit-content;
   transition: transform 50ms ease-in-out;
 }
 
 .navbar > h3:hover {
   opacity: 1;
-  color: rgb(22, 218, 142);
+  color: rgb(22, 218, 142) !important;
+  transform: scale(1.2);
+}
+
+.active {
+  opacity: 1;
+  color: rgb(22, 218, 142) !important;
   transform: scale(1.2);
 }

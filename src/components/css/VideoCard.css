@@ -1,0 +1,38 @@
+.videoCard {
+  color: white;
+  /* width: 240px; */
+  /* height: 400px; */
+  padding: 10px 10px;
+  margin: 20px 10px;
+  cursor: "pointer";
+  transition: transform 100ms ease-in;
+  border: 1px solid #051421;
+  box-shadow: 0px 0px 8px 2px #051421;
+}
+
+/* .videoCard:hover {
+  
+} */
+
+.videoCard > img {
+  object-fit: contain;
+  height: 350px;
+  border-radius: 4%;
+  margin: 10px 0px;
+  cursor: pointer;
+  transition: transform 100ms ease-in;
+
+  /* width: 400px; */
+}
+
+.videoCard > img:hover {
+  transform: scale(1.05);
+}
+
+.videoCard__stats {
+  display: none;
+}
+
+.videoCard:hover > .videoCard__stats {
+  display: inline;
+}

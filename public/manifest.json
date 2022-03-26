@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "HULU by CWA",
+  "name": "HULU Clone in REACT",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +18,9 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "start_url": "/",
+  "display": "fullscreen",
+  "theme_color": "#051421",
+  "background_color": "#042727",
+  "scope": "/"
 }

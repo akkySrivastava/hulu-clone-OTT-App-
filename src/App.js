@@ -1,18 +1,18 @@
-import { useState } from 'react';
-import './App.css';
-import Header from './Header'
-import Navbar from './Navbar';
-import Results from './Results';
-import request from './Request'
+import { useState } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Results from "./components/Results";
+import request from "./components/Request";
 
 function App() {
-  const [selectedOption, setSelectedOption] = useState(request.fetchHorroMovies)
+  const [selectedOption, setSelectedOption] = useState(request.fetchTrending);
 
   return (
     <div className="app">
-      <Header />
-      <Navbar setSelectedOption={setSelectedOption}/>
-      <Results selectedOption = {selectedOption}/>
+      <Header setSelectedOption={setSelectedOption} />
+      <Navbar setSelectedOption={setSelectedOption} />
+      <Results selectedOption={selectedOption} />
     </div>
   );
 }
