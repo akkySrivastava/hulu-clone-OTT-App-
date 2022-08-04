@@ -29,6 +29,7 @@ const MovieModal = ({ visible, setVisible, movie, url }) => {
       onCancel={() => setVisible(false)}
       width={1060}
       footer={null}
+      destroyOnClose
     >
       <div className="modal-container">
         <div className="modal-container-left">
@@ -37,6 +38,8 @@ const MovieModal = ({ visible, setVisible, movie, url }) => {
             width="100%"
             light={`https://image.tmdb.org/t/p/original${movie?.backdrop_path}`}
             url={url}
+            controls={true}
+            pip={true}
           ></ReactPlayer>
           {/* <img
             width={500}

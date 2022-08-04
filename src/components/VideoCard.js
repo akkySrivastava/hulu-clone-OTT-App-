@@ -5,8 +5,6 @@ import { truncate } from "../utils/truncate";
 import "./css/VideoCard.css";
 import ReactCardFlip from "react-card-flip";
 import MovieModal from "../utils/Modal";
-import axios from "../axios";
-import request, { API_KEY } from "../components/Request";
 import movieTrailer from "movie-trailer";
 
 export const base_url = "https://image.tmdb.org/t/p/original";
@@ -36,6 +34,8 @@ const VideoCard = forwardRef(({ movie }, ref) => {
         <ReactCardFlip isFlipped={!flipped} flipDirection="horizontal">
           <div
             onClick={handleClick}
+            // onMouseEnter={() => setFlipped(true)}
+            // onMouseLeave={() => setFlipped(false)}
             // ref={ref}
             style={{
               width: 250,
